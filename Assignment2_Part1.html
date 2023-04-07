@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment2-Part1</title>
+        <script src="calculation.js"></script>
+        <style>
+            tr td:first-child{
+                font-weight: 600;
+                text-align: center;
+            }
+            * {
+                font-family:'Times New Roman', Times, serif;
+            }
+            table {
+                font-size: larger;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Calculation</h1>
+        <table>
+            <tr>
+                <td><label for="room">Room Rental:</label></td>
+                <td><input type="number" id="room" name="room" maxlength="20" oninput="calculateTotal(),calculateTax()"></td>
+            </tr>
+            <tr>
+                <td><label for="food">Food:</label></td>
+                <td><input type="number" id="food" name="food" maxlength="20" oninput="calculateTotal(),calculateTax()"></td>
+            </tr>
+            <tr>
+                <td><label for="entertain">Entertainment:</label></td>
+                <td><input type="number" id="entertain" name="entertain" maxlength="20" oninput="calculateTotal(),calculateTax()"></td>
+            </tr>
+            <tr>
+                <td><label for="total">Total:</label></td>
+                <td><input type="text" id="total" name="total" maxlength="20" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="tax">With Tax:</label></td>
+                <td><input type="text" id="tax" name="tax" maxlength="20" readonly></td>
+            </tr>
+        </table>        
+    </body>
+</html>
